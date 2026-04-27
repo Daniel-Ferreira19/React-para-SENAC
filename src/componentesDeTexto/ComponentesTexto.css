@@ -1,0 +1,18 @@
+.componentes-texto {
+ margin: 24px 0; 
+      
+}
+
+.componentes-texto label{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+.componentes-texto input {
+font-size: 20px;
+border: none;
+box-sizing: border-box;
+box-shadow: 10px 10px 30px rgba(81, 119, 245, 0.06);
+width: 100%;
+padding: 20px;
+}
