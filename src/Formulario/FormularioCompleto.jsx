@@ -13,6 +13,7 @@ const times = [
       "UX e IX"
 
 ]
+console.log(time)
 
 const [nome, setNome] = useState('');
 const [cargo, setCargo] = useState('');
@@ -22,7 +23,7 @@ const [time, setTime] = useState('');
 
 function aoSalvar (evento) {
 evento.preventDefault()
-
+console.log(nome,cargo, imagem,time)
 }
 
     return (
