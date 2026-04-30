@@ -4,7 +4,7 @@ import ComponentesTexto from "../componentesDeTexto/ComponentesTexto";
 import ListaSuspensa from "../ListaSuspensa/ListaSuspensa";
 import "./FormularioCompleto.css"
 
-function FormularioCompleto () {
+function FormularioCompleto (props) {
 
 const times = [
       "programador",
@@ -13,7 +13,7 @@ const times = [
       "UX e IX"
 
 ]
-console.log(time)
+
 
 const [nome, setNome] = useState('');
 const [cargo, setCargo] = useState('');
@@ -23,7 +23,13 @@ const [time, setTime] = useState('');
 
 function aoSalvar (evento) {
 evento.preventDefault()
-console.log(nome,cargo, imagem,time)
+props.aoNovoCadastrante({
+  nome,
+  cargo,
+  imagem,
+  time
+})
+
 }
 
     return (
