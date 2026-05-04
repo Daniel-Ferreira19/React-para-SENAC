@@ -8,9 +8,12 @@ function FormularioCompleto (props) {
 
 const times = [
       "programador",
-      "fnt-end",
+      "front-end",
       "back-end",
-      "UX e IX"
+      "UX e IX",
+      "Data-science",
+      "Mobile",
+      "inovação e Gestão"
 
 ]
 

@@ -1,9 +1,51 @@
+import { useState } from "react";
 import Banner from "./Banners/Banner";
 import FormularioCompleto from "./Formulario/FormularioCompleto";
+import Time from "./Time/Time";
 import "./App.css";
-import { useState } from "react";
 
 function App() {
+
+const times =[
+{
+  nome: 'programador',
+  corPrimaria:'#57c278',
+  corSecundaria:'#d9f7e9'
+},
+{
+  nome:'front-end', 
+  corPrimaria:'#82cffa',
+  corSecundaria:'#e8f8ff'
+},
+{
+  nome:'back-end' ,
+  corPrimaria:'#a6d157',
+  corSecundaria:'#f0f8e2'
+},
+{
+      
+      
+  nome:'UX e IX', 
+  corPrimaria:'#e06869',
+  corSecundaria:'#fde7e8'
+},
+{
+  nome:'Data-science',
+  corPrimaria:'#db6ebf',
+  corSecundaria:'#fae9f5'
+},
+{
+  nome:'Mobile' ,
+  corPrimaria:'#ffba85',
+  corSecundaria:'#fff5d9'
+},
+{
+  nome:'inovação e Gestão',
+  corPrimaria:'#ff8a29',
+  corSecundaria:'#ffeedf'
+}
+
+]
 
   const [colaboradores, setColaborador] = useState([])
 
@@ -14,7 +56,13 @@ function App() {
   return (
     <div className="app">
       <Banner />
-      <FormularioCompleto  aoColaborador={NovoColaborador} />       
+      <FormularioCompleto  aoColaborador={NovoColaborador} />  
+      
+    {times.map(time => <Time  key={time.nome} nome={time.nome} 
+    corPrimaria={time.corPrimaria}
+    corSecundaria={time.corSecundaria}
+    />)}
+
     </div>
   )
 }
