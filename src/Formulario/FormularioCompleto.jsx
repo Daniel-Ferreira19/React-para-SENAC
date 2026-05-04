@@ -8,18 +8,13 @@ function FormularioCompleto (props) {
 
 const times = [
       "programador",
-      "fornt-end",
+      "fnt-end",
       "back-end",
       "UX e IX"
 
 ]
 
-<<<<<<< HEAD
-
 const [nome, setNome] = useState('');
-=======
-const [nome, setNome] = useState('daniel');
->>>>>>> e66cafc (acrescentei os colaboradores)
 const [cargo, setCargo] = useState('');
 const [imagem, setImagem] = useState('');
 const [time, setTime] = useState('');
@@ -27,22 +22,12 @@ const [time, setTime] = useState('');
 
 function aoSalvar (evento) {
 evento.preventDefault()
-<<<<<<< HEAD
-props.aoNovoCadastrante({
-  nome,
-  cargo,
-  imagem,
-  time
-})
-
-=======
 props.aoColaborador({
     nome,
     cargo,
     imagem,
     time
 })
->>>>>>> e66cafc (acrescentei os colaboradores)
 }
 
     return (
