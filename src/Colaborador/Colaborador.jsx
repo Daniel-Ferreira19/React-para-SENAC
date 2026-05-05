@@ -1,14 +1,14 @@
 import "./Colaborador.css"
-function Colaborador() {
+function Colaborador(props) {
     return (
         <div className="colaborador">
             <div className="cabecalho">
-                <img src="https://github.com/Daniel-Ferreira19.png" alt="Daneil" />
+                <img src={props.imagem} alt={props.nome} />
             </div>
 
             <div className="rodape">
-                <h4> Daniel </h4>
-                <h3>Desenvolvedor</h3>
+                <h4>{props.nome}</h4>
+                <h3>{props.cargo}</h3>
             </div>
         </div>
     )

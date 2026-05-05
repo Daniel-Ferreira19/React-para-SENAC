@@ -20,6 +20,10 @@ props.aoColaborador({
     imagem,
     time
 })
+ setNome('');
+ setCargo('');
+ setImagem('');
+ setTime('');
 }
 
     return (
