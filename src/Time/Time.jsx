@@ -9,7 +9,7 @@ function Time(props) {
 
       <div className="colaboradores">
 
-      {props.colaboradores.map(colaborador => <Colaborador nome={colaborador.nome}
+      {props.colaboradores.map(colaborador => <Colaborador nome={colaborador.nome} corDeFundo={props.corPrimaria}
         cargo={colaborador.cargo} imagem={colaborador.imagem} />)}
         </div>
     </section>

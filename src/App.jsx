@@ -2,6 +2,7 @@ import { useState } from "react";
 import Banner from "./Banners/Banner";
 import FormularioCompleto from "./Formulario/FormularioCompleto";
 import Time from "./Time/Time";
+
 import "./App.css";
 
 function App() {
@@ -66,7 +67,7 @@ function App() {
         colaboradores={colaboradores.filter(colaborador => colaborador.time == time.nome)}
 
       />)}
-
+     
     </div>
   )
 }
