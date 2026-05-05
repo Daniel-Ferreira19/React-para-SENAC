@@ -62,6 +62,7 @@ function App() {
       {times.map(time => <Time key={time.nome} nome={time.nome}
         corPrimaria={time.corPrimaria}
         corSecundaria={time.corSecundaria}
+        //colocamos o .filter(), ele filtra cada elemento que desejar.
         colaboradores={colaboradores.filter(colaborador => colaborador.time == time.nome)}
 
       />)}
