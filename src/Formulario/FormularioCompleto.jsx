@@ -6,17 +6,6 @@ import "./FormularioCompleto.css"
 
 function FormularioCompleto (props) {
 
-const times = [
-      "programador",
-      "front-end",
-      "back-end",
-      "UX e IX",
-      "Data-science",
-      "Mobile",
-      "inovação e Gestão"
-
-]
-
 const [nome, setNome] = useState('');
 const [cargo, setCargo] = useState('');
 const [imagem, setImagem] = useState('');
@@ -54,7 +43,7 @@ props.aoColaborador({
                 <ListaSuspensa 
                   obrigatorio={true}
                    label="Time"
-                    item={times}
+                    item={props.times}
                     valor={time}
                     aoAlterado={valor => setTime(valor)}
                     />
